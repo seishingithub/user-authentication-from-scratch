@@ -40,4 +40,18 @@ class Application < Sinatra::Application
     redirect '/'
   end
 
+  get '/login' do
+    erb :login
+  end
+
+  post '/login' do
+    user = DB[:users][email: params[:email]]
+    hashed_password = BCrypt::Password.create(params[:password])
+
+    if hashed_password = BCrypt::Password.new(user[:password])
+      session[:user_id] = user[:id]
+      redirect '/'
+
+    end
+  end
 end

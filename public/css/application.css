@@ -1,6 +1,7 @@
 body {
     background-color: orange;
 }
+
 .links {
     margin-left: 50px;
     margin-top: 60px;
@@ -16,6 +17,7 @@ body {
     margin-left: 150px;
     margin-top: 70px;
 }
+
 .form {
     margin-left: 200px;
 }

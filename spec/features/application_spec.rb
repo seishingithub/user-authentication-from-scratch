@@ -16,5 +16,10 @@ feature 'Homepage' do
     click_link('Logout')
     expect(page).to have_content 'You are not logged in.'
 
+    click_link('Login')
+    fill_in('email', with: "joe@example.com")
+    fill_in('password', with: "1234")
+    click_button("Login")
+    expect(page).to have_content 'Welcome, joe@example.com'
   end
 end
