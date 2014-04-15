@@ -27,3 +27,9 @@ details.
 ## Migrations on Heroku
 To run the migrations on heroku, run `heroku run 'rake db:migrate'`. If you
 do not have a Heroku configuration variable named DATABASE_URL, then you will need to create one.
+
+
+http://mysterious-beach-5145.herokuapp.com/    = staging
+http://fierce-eyrie-3877.herokuapp.com/    = production
+
+

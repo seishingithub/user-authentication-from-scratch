@@ -1,3 +1,17 @@
-<p>
-  Welcome!
-</p>
+<!DOCTYPE html>
+<html>
+<head><title>A Web Page</title></head>
+<body>
+<h1>
+  <% if user != nil %>
+    Welcome, <%= email %>
+  <% else %>
+    You are not logged in.
+</h1>
+
+  <a href="/register">Register</a>
+  <% end %>
+
+  </body>
+</html>
+
