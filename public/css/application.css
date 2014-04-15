@@ -1,3 +1,29 @@
 body {
     background-color: orange;
 }
+.welcome {
+    margin-left: 50px;
+    margin-top: 60px;
+
+}
+.header {
+    margin-left: 150px;
+    margin-top: 70px;
+}
+.form {
+    margin-left: 200px;
+}
+
+.form-wrapper {
+    margin-left: 70px;
+}
+
+.form-label {
+    display: inline-block;
+    width: 75px;
+}
+
+.submit {
+    display: inline-block;
+    margin-left: 150px;
+}
