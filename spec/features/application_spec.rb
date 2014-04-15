@@ -13,5 +13,8 @@ feature 'Homepage' do
     fill_in('password', with: "1234")
     click_button('Register')
     expect(page).to have_content 'Welcome, joe@example.com'
+    click_link('Logout')
+    expect(page).to have_content 'You are not logged in.'
+
   end
 end

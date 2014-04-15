@@ -1,12 +1,15 @@
 
-<h1 class = "welcome">
+<h1 class = "welcome-text">
   <% if user != nil %>
-    Welcome, <%= email %>
-  <% else %>
-    You are not logged in.
+   Welcome, <%= email %>
 </h1>
+    <a class = "links" href="/logout">Logout</a>
+<% else %>
+    <h1 class = "welcome-text">
+    You are not logged in.
+    </h1>
 
-  <a class = "welcome" href="/register">Register</a>
+    <a class = "links" href="/register">Register</a>
   <% end %>
 
 

@@ -1,11 +1,17 @@
 body {
     background-color: orange;
 }
-.welcome {
+.links {
     margin-left: 50px;
     margin-top: 60px;
 
 }
+
+.welcome-text {
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
 .header {
     margin-left: 150px;
     margin-top: 70px;
