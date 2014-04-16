@@ -4,6 +4,12 @@
   </h1>
 </div>
 
+<div class="error-message">
+<% if errors %>
+  <%= errors %>
+<% end %>
+</div>
+
 <div class="form">
   <form action="/login" method="post">
     <p class="form-wrapper"><label class="form-label" for="email-field">Email</label>

@@ -1,5 +1,5 @@
 body {
-    background-color: orange;
+    background-color: lightblue;
 }
 
 .links {
@@ -34,4 +34,10 @@ body {
 .submit {
     display: inline-block;
     margin-left: 150px;
+}
+
+.error-message {
+    display: inline-block;
+    margin-left: 350px;
+    color: red;
 }

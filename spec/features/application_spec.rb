@@ -32,4 +32,23 @@ feature 'User Registration and Login' do
     click_button("Login")
     expect(page).to_not have_content "Welcome, susan@example.com"
   end
+
+  scenario 'User attempts to login with incorrect password' do
+    visit '/'
+    click_link('Register')
+    fill_in('email', with: "joe@example.com")
+    fill_in('password', with: "1234")
+    click_button('Register')
+    click_link('Logout')
+
+    click_link("Login")
+    fill_in('email', with: "joe@example.com")
+    fill_in('password', with: "mistake")
+    click_button("Login")
+    expect(page).to have_content 'Email / password is invalid'
+    fill_in('email', with: "joe@example.org")
+    fill_in('password', with: "mistake")
+    click_button("Login")
+    expect(page).to have_content 'Email / password is invalid'
+  end
 end
