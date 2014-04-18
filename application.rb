@@ -53,4 +53,9 @@ class Application < Sinatra::Application
       redirect '/'
     end
   end
+
+  get '/show_users' do
+    users = DB[:users].to_a
+    erb :show_users, locals: {:users => users}
+  end
 end

@@ -51,4 +51,21 @@ feature 'User Registration and Login' do
     click_button("Login")
     expect(page).to have_content 'Email / password is invalid'
   end
+
+  scenario 'Administrators can see a list of all other users' do
+    visit '/'
+    click_link('Register')
+
+    fill_in('email', with: "joe@example.com")
+    fill_in('password', with: "1234")
+    click_button('Register')
+    click_link('Logout')
+    click_link("Login")
+    fill_in('email', with: "joe@example.com")
+    fill_in('password', with: "1234")
+    click_button("Login")
+
+    click_link("View all users")
+    expect(page).to have_content "joe@example.com"
+  end
 end

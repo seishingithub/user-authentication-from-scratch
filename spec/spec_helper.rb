@@ -12,5 +12,6 @@ RSpec.configure do |config|
     migration_task.invoke(0)
     migration_task.reenable
     migration_task.invoke
+    migration_task.reenable
   end
 end

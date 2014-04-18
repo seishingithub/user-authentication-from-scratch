@@ -1,0 +1,20 @@
+
+<div id="container">
+<div id="links-home"><a href="/">Home</a></div>
+<div id="right-welcome"> Welcome,<a href="/logout">Logout</a></div>
+</div> <!--container end -->
+
+<h2 class="users-header">Users</h2>
+
+<table>
+
+    <th>ID</th>
+    <th>Email</th>
+  </tr>
+  <% users.each do |user| %>
+    <tr>
+      <td><%= user[:id] %></td>
+      <td><%= user[:email] %></td>
+    </tr>
+  <% end %>
+</table>
