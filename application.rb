@@ -53,4 +53,25 @@ class Application < Sinatra::Application
     users = DB[:users].to_a
     erb :show_users, locals: {:users => users}
   end
+
+  get '/about' do
+    erb :about
+  end
+
+  get '/learn' do
+    erb :learn
+  end
+
+  get '/juices' do
+    erb :juices
+  end
+
+  get '/order' do
+    erb :order
+  end
+
+  get '/contact' do
+    erb :contact
+  end
+
 end
