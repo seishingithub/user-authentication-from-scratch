@@ -5,7 +5,8 @@ body {
 #header_container,
 #nav_container,
 #content_container,
-#footer_container {
+#footer_container,
+#contact_container{
     margin: auto;
     width: 960px;
 }
@@ -92,10 +93,24 @@ th, td {
     border: solid black 1px;
 }
 
-/* ----- =columns ----- */
-.top_columns {
-
+.mid_p_color_change {
+    color: #EE845C;
 }
+
+.mid_p_font_larger {
+    font-size: 52px;
+}
+
+.citysearch {
+    color: #9B9CA0;
+}
+
+.index_text_under_pix {
+    color: #78787A;
+    font-size: 14px;
+}
+
+/* ----- =columns ----- */
 
 .one_third {
     width: 300px;
@@ -136,6 +151,15 @@ th, td {
 }
 
 /* ----- =menu (Primary Nav) ----- */
+
+.nav_titles {
+    color: #A1C815;
+    font-size: 24px;
+}
+
+.nav_body {
+    color: #78787A;
+}
 
 #menu {
     float: right; /* or float: left */

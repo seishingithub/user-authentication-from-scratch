@@ -75,7 +75,7 @@ feature 'User Registration and Login' do
     expect(page).to have_content "Chief Juicing Officer"
 
     visit('/learn')
-    expect(page).to have_content "Why Cleanse?"
+    expect(page).to have_content "Why Cleanse with Dash Juice?"
 
     visit('/juices')
     expect(page).to have_content "Spicy Lemonade"
